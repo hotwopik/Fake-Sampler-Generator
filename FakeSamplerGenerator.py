@@ -12,7 +12,7 @@ def GetImageData(file=str):
     except:
         print("Its not image!")
         sleep(1)
-        exit()
+        exit(0)
     image=image.convert('RGBA')
     out=[]
     size=image.size
@@ -115,7 +115,7 @@ file=input("Input image file: ")
 if not isfile(file):
     print("File not found!")
     sleep(1)
-    exit()
+    exit(0)
 name=input("Function name / output file name: ")
 
 CreateFile(file,name)
