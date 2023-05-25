@@ -117,6 +117,10 @@ if not isfile(file):
     sleep(1)
     exit(0)
 name=input("Function name / output file name: ")
+if name=="":
+    print("Uncorrect input!")
+    sleep(1)
+    exit(0) 
 
 CreateFile(file,name)
 sleep(1)
