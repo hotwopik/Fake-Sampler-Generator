@@ -1,6 +1,6 @@
-print("Initializing...")
 from os import system
 system("title Fake Sampler Generator v1.0")
+print("Initializing...")
 from PIL import Image
 from time import sleep
 from os.path import isfile
